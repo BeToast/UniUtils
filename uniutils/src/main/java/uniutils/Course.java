@@ -34,4 +34,14 @@ public class Course {
         if (modules == null) modules = new ArrayList<Module>();
         modules.add(module);
     }
+
+    public String toString(){
+        return
+            "Course: " + name + "\n" +
+            "Start: " + startdate + "\n" +
+            "End: " + enddate + "\n" +
+            "Modules: " + modules.toString() + "\n" +
+            "Students: " + students.toString()
+        ;
+    }
 }

@@ -43,4 +43,9 @@ public class Student {
         this.username = this.name+this.age;
         return this.username;
     }
+
+    public String toString(){
+        if(this.username == null){getUsername();}
+        return "Name: " + this.name + ", age: " + this.age + ", username: " +this.username+"id: " + this.id;
+    }
 }

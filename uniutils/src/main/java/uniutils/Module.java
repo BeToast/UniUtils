@@ -35,4 +35,8 @@ public class Module {
     public void addCourseName(String course) {
         this.courseNames.add(course);
     }
+
+    public String toString(){
+        return "Name: " + this.name + ", id: " + this.id + ", lecurer: " +this.lecturer.toString();
+    }
 }
